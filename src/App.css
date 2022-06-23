@@ -2,13 +2,25 @@
   position: absolute;
   height: 48px;
   width: 100%;
+  max-width: 1475px;
+  min-width: 1230px;
   overflow: hidden;
 }
-table {
+table, tbody {
+  width: auto;
   display: flex;
+  justify-content: space-between;
+}
+#sbc {
+  max-width: 90px;
+  font-size: 0.9rem;
 }
 img {
   transform: translateY(-50px);
   width: 250px;
   height: 200px;
+}
+.search {
+  height: available;
+  width: available;
 }
