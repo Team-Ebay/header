@@ -1,0 +1,14 @@
+#root {
+  position: absolute;
+  height: 48px;
+  width: 100%;
+  overflow: hidden;
+}
+table {
+  display: flex;
+}
+img {
+  transform: translateY(-50px);
+  width: 250px;
+  height: 200px;
+}
