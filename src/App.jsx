@@ -5,10 +5,23 @@ function App() {
   return (
     <>
       {/* Holds the icon, search-by-category, search bar, search button */}
-      <img className="ebay-icon" alt="eBay Logo" src="https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png"/>
+      <ul className="navbar">
+        <li>Hi <a href="/">Sign in</a> or register</li>
+        <li>Daily Deals</li>
+        <li>Brand Outlet</li>
+        <li>Help &amp; Contact</li>
+        <li>Sell</li>
+        <li>Watchlist</li>
+        <li>My eBay</li>
+        <li>🔔</li>
+        <li>🛒</li>
+      </ul>
       <table>
         <tbody>
-          <tr id="ebay-icon-placeholder"><a href="/"></a></tr>
+          <tr id="ebay-icon-placeholder">
+            <img id="ebay-icon" alt="eBay Logo" src="https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png"/>
+            <a href="/"></a>
+          </tr>
           <tr id="sbc">
             Shop by category
           </tr>
@@ -52,12 +65,24 @@ function App() {
               <option >Everything Else</option>
             </select>
           </tr>
-          <tr>
-            <button id="search-button">Search</button>
+          <tr id="search-button">
+            <button>Search</button>
           </tr>
-          <tr id="#adv">Advanced</tr>
+          <tr id="adv">Advanced</tr>
         </tbody>
       </table>
+      <ul className="navbar">
+        <li>Home</li>
+        <li>♥Saved</li>
+        <li>Motors</li>
+        <li>Electronics</li>
+        <li>Collectibles &amp; art</li>
+        <li>Home &amp; Garden</li>
+        <li>Clothing &amp; Accessories</li>
+        <li>Toys</li>
+        <li>Sporing Goods</li>
+        <li>More</li>
+      </ul>
     </>
   );
 }
