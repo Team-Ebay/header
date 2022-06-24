@@ -4,31 +4,60 @@ import React from 'react'
 function App() {
   return (
     <>
-      <div className="navbar">
-        {/* Holds the icon, search-by-category, search bar, search button */}
-        <a href="/">
-          <img id="ebay-icon" alt="eBay Logo" src="https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png"/>
-        </a>
-        <table>
-          <tbody>
-            <tr id="ebay-icon-placeholder">
-
-            </tr>
-            <tr>
-              Shop by category
-            </tr>
-            <tr>
-              <input type="text"/>
-            </tr>
-            <tr>
-              <button>Search</button>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <nav>
-
-      </nav>
+      {/* Holds the icon, search-by-category, search bar, search button */}
+      <img className="ebay-icon" alt="eBay Logo" src="https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png"/>
+      <table>
+        <tbody>
+          <tr id="ebay-icon-placeholder"><a href="/"></a></tr>
+          <tr id="sbc">
+            Shop by category
+          </tr>
+          <tr id="search-bar">
+            <input placeholder="Search for anything" type="text"/>
+            <select id="search-select" className="search">
+              <option >All Categories</option>
+              <option >Antiques</option>
+              <option >Art</option>
+              <option >Baby</option><option value="267">Books</option>
+              <option >Business &amp; Industrial</option>
+              <option >Cameras &amp; Photo</option>
+              <option >Cell Phones &amp; Accessories</option>
+              <option >Clothing, Shoes &amp; Accessories</option>
+              <option >Coins &amp; Paper Money</option>
+              <option >Collectibles</option>
+              <option >Computers/Tablets &amp; Networking</option>
+              <option >Consumer Electronics</option>
+              <option >Crafts</option>
+              <option >Dolls &amp; Bears</option>
+              <option >DVDs &amp; Movies</option>
+              <option >eBay Motors</option>
+              <option >Entertainment Memorabilia</option>
+              <option >Gift Cards &amp; Coupons</option>
+              <option >Health &amp; Beauty</option>
+              <option >Home &amp; Garden</option>
+              <option >Jewelry &amp; Watches</option>
+              <option >Music</option>
+              <option >Musical Instruments &amp; Gear</option>
+              <option >Pet Supplies</option>
+              <option >Pottery &amp; Glass</option>
+              <option >Real Estate</option>
+              <option >Specialty Services</option>
+              <option >Sporting Goods</option>
+              <option >Sports Mem, Cards &amp; Fan Shop</option>
+              <option >Stamps</option>
+              <option >Tickets &amp; Experiences</option>
+              <option >Toys &amp; Hobbies</option>
+              <option >Travel</option>
+              <option >Video Games &amp; Consoles</option>
+              <option >Everything Else</option>
+            </select>
+          </tr>
+          <tr>
+            <button id="search-button">Search</button>
+          </tr>
+          <tr id="#adv">Advanced</tr>
+        </tbody>
+      </table>
     </>
   );
 }

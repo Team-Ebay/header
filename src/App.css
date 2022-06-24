@@ -1,26 +1,68 @@
+html {
+  overflow: hidden;
+  padding:
+}
 #root {
   position: absolute;
   height: 48px;
   width: 100%;
-  max-width: 1475px;
-  min-width: 1230px;
+  max-width: 1248;
   overflow: hidden;
+  font-family: "Helvetica Neue",Helvetica,Arial,Verdana,Sans-serif;
+
+  padding: 0px 32px 0px 32px;
 }
 table, tbody {
   width: auto;
   display: flex;
-  justify-content: space-between;
+  flex-grow: 1;
 }
 #sbc {
   max-width: 90px;
   font-size: 0.9rem;
+  flex-grow: 1;
 }
-img {
-  transform: translateY(-50px);
+.ebay-icon {
+  transform: translateY(-48px);
   width: 250px;
   height: 200px;
+  position: absolute;
+}
+#ebay-icon-placeholder {
+  width: 117px;
+  height: 48px;
+}
+tr {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
 }
 .search {
-  height: available;
-  width: available;
+  border-radius: 0;
+  border: none;
+}
+#search-bar {
+  border: 2px solid black;
+  padding-left: 50px;
+  flex-grow: 1;
+}
+input, select {
+  border: none;
+  border-radius: 0;
+}
+#search-select {
+  max-width: 160px;
+  padding-left: 16px;
+  padding-right: 30px;
+  background-color: white;
+  border-left: 1px solid gray;
+}
+#search-button {
+  background-color: #3665f3;
+
+}
+#adv {
+  width: 70px;
 }
