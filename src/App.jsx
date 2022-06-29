@@ -5,16 +5,16 @@ function App() {
   return (
     <>
       {/* Holds the icon, search-by-category, search bar, search button */}
-      <ul className="navbar">
-        <li>Hi <a href="/">Sign in</a> or register</li>
+      <ul className="navbar" id="topnav">
+        <li>Hi <a>Sign in</a> or <a>register</a></li>
         <li>Daily Deals</li>
         <li>Brand Outlet</li>
         <li>Help &amp; Contact</li>
-        <li>Sell</li>
+        <li id="nav-right-align">Sell</li>
         <li>Watchlist</li>
         <li>My eBay</li>
-        <li>🔔</li>
-        <li>🛒</li>
+        <li className="icon">🔔</li>
+        <li className="icon">🛒</li>
       </ul>
       <table>
         <tbody>

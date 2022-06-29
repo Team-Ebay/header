@@ -1,17 +1,18 @@
 html {
   overflow: hidden;
-  padding:
 }
 #root {
   position: absolute;
   width: 100vw;
   overflow: hidden;
-  font-family: "Helvetica Neue",Helvetica,Arial,Verdana,Sans-serif;
+  font-family: "Market Sans",Arial,sans-serif;
+  color: #555;
+  /* font-family: "Helvetica Neue",Helvetica,Arial,Verdana,Sans-serif; */
 }
 table {
   max-width: 1248px;
   height: 48px;
-  margin: 0 auto 0 auto;
+  margin: 10px auto 10px auto;
 }
 tbody {
   width: inherit;
@@ -24,6 +25,7 @@ tbody {
   margin-left: 10px;
 }
 #ebay-icon {
+  clip: rect(47px, 118px, 95px, 0px);
   transform: translate(67px, 29px);
   width: 250px;
   height: 200px;
@@ -39,7 +41,7 @@ tr {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1
+  flex-grow: 0;
 }
 .search {
   border-radius: 0;
@@ -48,13 +50,16 @@ tr {
 #search-bar {
   border: 2px solid black;
   height: 38px;
+  width: 550px;
   padding-left: 50px;
   flex-grow: 1;
   margin-right: 3px;
+  flex-shrink: 0;
 }
 input, select {
   border: none;
   border-radius: 0;
+  flex-grow: 1;
 }
 #search-select {
   max-width: 160px;
@@ -76,7 +81,7 @@ input, select {
   font-size: 11px;
   text-align: center;
 }
-#navbar {
+.navbar {
   font-size: 12px;
   font-weight: bold;
   margin: 0 auto 0 auto;
@@ -86,8 +91,24 @@ input, select {
   justify-content: center;
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
+  list-style: none;
 }
-#navbar > li {
-  flex-grow: 1;
+.navbar > li {
+  flex-grow: 0;
   margin: 9px 12px 9px 12px;
+}
+.navbar > li > a {
+  color: #3675c7;
+  text-decoration: underline;
+}
+#topnav {
+  justify-content: flex-start;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+#nav-right-align {
+  margin-left: auto
+}
+.icon {
+  transform: scale(1.2)
 }
