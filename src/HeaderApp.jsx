@@ -1,9 +1,9 @@
 import './App.css'
 import React from 'react'
 
-function App() {
+function HeaderApp() {
   return (
-    <>
+    <div id="headerAppContainer">
       {/* Holds the icon, search-by-category, search bar, search button */}
       <ul className="navbar" id="topnav">
         <li>Hi <a>Sign in</a> or <a>register</a></li>
@@ -19,14 +19,14 @@ function App() {
       <table>
         <tbody>
           <tr id="ebay-icon-placeholder">
-            <img id="ebay-icon" alt="eBay Logo" src="https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png"/>
+            <img id="ebay-icon" alt="eBay Logo" src="https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png" />
             <a href="/"></a>
           </tr>
           <tr id="sbc">
             Shop by category
           </tr>
           <tr id="search-bar">
-            <input placeholder="Search for anything" type="text"/>
+            <input placeholder="Search for anything" type="text" />
             <select id="search-select" className="search">
               <option >All Categories</option>
               <option >Antiques</option>
@@ -83,8 +83,8 @@ function App() {
         <li>Sporing Goods</li>
         <li>More</li>
       </ul>
-    </>
+    </div>
   );
 }
 
-export default App;
+export default HeaderApp;
